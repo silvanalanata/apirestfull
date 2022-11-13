@@ -16,7 +16,7 @@ router.get("/getAll", getAll);
 router.post("/postNuevo", postNuevo);
 
 
-router.get("/getId", getId);
+router.get("/getId/:id", getId);
 
 router.put("/putUpdateId", putUpdateId);
 

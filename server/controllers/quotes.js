@@ -22,7 +22,7 @@ const postNuevo = async (request, response) => {
 
 
   const getId = async (request, response) => {
-    let id = request.body._id;
+    let id = request.params.id
     console.log(id)
     ApiModel.findOne({ _id: id })
         .then(data => response.json(data))
